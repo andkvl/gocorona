@@ -60,10 +60,13 @@ img {
 
 a {
   text-decoration: none;
+  @extend %transition;
   // color: $brand-color;
   &:visited {
   }
   &:hover {
+    text-decoration: underline;
+    color: lighten($color: $color-link, $amount: 50%);
   }
   &:focus {
   }
@@ -114,10 +117,19 @@ body {
 ._container {
   max-width: $content-width;
   margin: 0 auto;
-  // padding-left: 20px;
-  // padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   // зачем - ?
   // width: 100%;
+  @include pc {
+    max-width: 970px;
+  }
+  @include tablet {
+    max-width: 750px;
+  }
+  @include mobile {
+    max-width: none;
+  }
 }
 
 // скрытие h1

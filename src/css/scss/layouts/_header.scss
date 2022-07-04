@@ -9,8 +9,18 @@
     min-height: 114px;
     display: flex;
     align-items: center;
+    @include media-tablet {
+        min-height: 80px;
+    }
 }
 .header__logo {
+    @include mobile-small {
+        > img {
+            max-width: none;
+        }
+        flex: 0 0 40px;
+        overflow: hidden;
+    }
 }
 .header__menu {
     flex: 1 1 auto;
@@ -19,12 +29,28 @@
     display: flex;
     justify-content: flex-end;
 }
+.menu__body {
+    @include mobile {
+        // display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
 .menu__list {
     display: flex;
     // gap: 40px;
 }
 .menu__item {
     margin-right: 40px;
+    @include media-tablet {
+        margin-right: 30px;
+    }
+    @include mobile {
+        margin-right: 25px;
+    }
 }
 .menu__link {
     text-transform: uppercase;
@@ -37,4 +63,13 @@
     flex: 0 0 252px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    @include media-tablet {
+        flex: 0 0 170px;
+    }
+    > .button {
+        @include mobile {
+            // padding: 14px 20px;
+        }
+    }
 }
