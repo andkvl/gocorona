@@ -18,14 +18,21 @@ body {
 }
 
 // p
-h1, h2, h3, h4, h5, h6, ul, ol {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
   margin: 0;
   /* для h1-h6 можно указывать font-family */
 }
 
 ul {
   // убираем для nav
-  // смотри ещё margin and padding + для ol 
+  // смотри ещё margin and padding + для ol
   // margin: 0;
   // padding: 0;
   list-style: none;
@@ -54,10 +61,14 @@ img {
 a {
   text-decoration: none;
   // color: $brand-color;
-  &:visited {}
-  &:hover {}
-  &:focus {}
-  &:active{}
+  &:visited {
+  }
+  &:hover {
+  }
+  &:focus {
+  }
+  &:active {
+  }
 }
 
 button {
@@ -78,12 +89,18 @@ button {
 
 /* Base end */
 
-
 // helpers.scss
 
 // для удобства счёта и перевода 23px = 2.3rem
-// html {font-size: 10px;}
-// body {font-size: 1.6rem;}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+  color: $color-text;
+}
 
 .wrapper {
   min-height: 100%;
@@ -106,16 +123,16 @@ button {
 // скрытие h1
 
 .visuallyhidden {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    -webkit-clip-path: inset(0px 0px 99.9% 9999.9%);
-    clip-path: inset(0px 0px 99.9% 99.9%);
-    overflow: hidden;
-    height: 1px;
-    width: 1px;
-    padding: 0;
-    border: 0;
-  }
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 9999.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}
 
 // делает из картинки как img фактически фоновое изображение (для backend)
 // фрилансер по жизни
@@ -123,9 +140,9 @@ button {
 
 ._ibg {
   position: relative;
-  
+
   // в одном из примеров есть ещё плюс:
-  
+
   // padding-bottom: 56.25%; /* 16:9 */
   // height: 0;
   // overflow: hidden;

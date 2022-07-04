@@ -13,14 +13,14 @@
 
 // 2 файла в папке
 
-// @import "vendors/normalize";
+@import "vendors/normalize";
 
 
 // 3. Base
 // Общие шаблоны проекта, стандартные стили, типографские правила.
 
-// @import "base/typography";
-// @import "base/base";
+@import "base/typography";
+@import "base/base";
 
 
 // 4. Layout
@@ -30,11 +30,11 @@
 
 // background ???
 
-// @import "layouts/header";
+@import "layouts/header";
 // @import "layouts/navigation";
 // @import "layouts/grid";
 // @import "layouts/about-us";
-// @import "layouts/footer";
+@import "layouts/footer";
 // @import "layouts/sidebar";
 // @import "layouts/forms";
 // @import "layouts/promo";
