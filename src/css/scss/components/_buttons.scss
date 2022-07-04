@@ -1,10 +1,22 @@
 .button {
-  // font
-  // color
-  // min-width
-  // padding
-  // @extend %transition;
-  // &_bordered {}
-  // &_transparent {}
-  // &_colored {}
+  // display: inline-block;
+  min-width: 100px;
+  font-family: $font-extra;
+  color: $color-text-btn;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  @include font (1.0, 1.2, 800);
+  text-transform: uppercase;
+  padding: 14px 30px;
+  background-color: $color-primary;
+  @extend %transition;
+  &:hover {
+    background-color: darken($color: $color-primary, $amount: 20%);
+  }
+  &_blue {
+    background-color: $color-additional;
+    &:hover {
+      background-color: darken($color: $color-additional, $amount: 20%);
+    }
+  }
 }

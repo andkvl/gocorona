@@ -34,7 +34,7 @@ ul {
   // убираем для nav
   // смотри ещё margin and padding + для ol
   // margin: 0;
-  // padding: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -74,11 +74,11 @@ a {
 button {
   cursor: pointer;
   background-color: transparent; // none
-  // border: none; убирает рамку
+  border: none;
   // border: 1px solid transparent; убирает рамку
   // min-width: 35px; лучше задавать
   // padding: 0.5em 1em; лучше задавать
-  // color: inherit;
+  color: inherit;
 }
 
 // Стилевое оформление всех полей ввода текста, кроме флажков и переключателей
@@ -97,7 +97,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: $font-main;
   font-size: 1.2rem;
   color: $color-text;
 }
@@ -106,8 +106,8 @@ body {
   min-height: 100%;
   overflow: hidden;
   // для прижатия footer к низу страницы
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
   // .page { flex: 1 1 auto;}
 }
 
