@@ -12,7 +12,12 @@
 }
 
 @mixin media-big {
-  @media (max-width: $content-width + 30px) {
+  @media (max-width: $content-width) {
+    @content;
+  }
+}
+@mixin media-padding {
+  @media (max-width: $content-padding) {
     @content;
   }
 }

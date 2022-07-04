@@ -2,10 +2,10 @@
 // Может называться utilities или  helpers.
 // Все инструменты и хелперы. Не должна создавать CSS при компиляции.
 
-// @import "abstracts/variables";
+@import "abstracts/variables";
 // @import "abstracts/functions";
-// @import "abstracts/mixins";
-// @import "abstracts/placeholders";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
 
 
 // 2. Vendors

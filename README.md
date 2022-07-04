@@ -1,4 +1,4 @@
 Фрилансер по жизни https://youtu.be/sohdv21BVNI
 
-beginning:
+beginning: 04.07.2022
 ending:
