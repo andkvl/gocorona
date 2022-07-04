@@ -19,3 +19,5 @@ ending:
 
 
 !!! В andkvl привести в порядок base and constants
+
+http://prgssr.ru/development/tryuki-s-psevdoklassom-target.html
