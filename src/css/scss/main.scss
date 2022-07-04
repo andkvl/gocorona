@@ -1,0 +1,67 @@
+// 1. Abstracts
+// Может называться utilities или  helpers.
+// Все инструменты и хелперы. Не должна создавать CSS при компиляции.
+
+// @import "abstracts/variables";
+// @import "abstracts/functions";
+// @import "abstracts/mixins";
+// @import "abstracts/placeholders";
+
+
+// 2. Vendors
+// Содержит все CSS-файлы из внешних библиотек и фреймворков: Normalize, Bootstrap, jQueryUI, etc.
+
+// 2 файла в папке
+
+// @import "vendors/normalize";
+
+
+// 3. Base
+// Общие шаблоны проекта, стандартные стили, типографские правила.
+
+// @import "base/typography";
+// @import "base/base";
+
+
+// 4. Layout
+// elements ???
+// ОСНОВНЫЕ. Всё, что принимает в постройке раскладки сайта или приложения.
+// Стили для основных частей сайта, сетка или даже CSS-стили для всех форм.
+
+// background ???
+
+// @import "layouts/header";
+// @import "layouts/navigation";
+// @import "layouts/grid";
+// @import "layouts/about-us";
+// @import "layouts/footer";
+// @import "layouts/sidebar";
+// @import "layouts/forms";
+// @import "layouts/promo";
+
+
+// 5. Components
+// Может называться modules.
+// Для маленьких компонентов. Код в них сфокусирован больше на виджетах.
+// Содержит все модули, вроде слайдера, загрузчика и т.д.
+
+// buttons, carousel, cover, dropdown, media, thumbnails, etc.
+
+// @import "components/buttons";
+// @import "components/hamburger";
+
+
+// 6. Pages
+// Если есть стили, зависящие от страницы, то лучше положить их в отдельный файл.
+
+// home, contact, work, team, services
+
+// @import "pages/errors";
+
+
+// 7. Themes
+// Большие сайты и приложения могут иметь различные темы оформления.
+
+// default, admin, dark, etc.
+
+// @import "themes/dark";

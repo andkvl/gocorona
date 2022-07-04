@@ -1,0 +1,142 @@
+/* Base start */
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  // см. _typography.scss
+  // указать background-color
+}
+
+// p
+h1, h2, h3, h4, h5, h6, ul, ol {
+  margin: 0;
+  /* для h1-h6 можно указывать font-family */
+}
+
+ul {
+  // убираем для nav
+  // смотри ещё margin and padding + для ol 
+  // margin: 0;
+  // padding: 0;
+  list-style: none;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  // height: auto
+}
+
+// Синюю рамку (a, input, button) убираем при помощи задания outline: none (но её иногда нужно выделять)
+
+:focus,
+:active {
+  outline: none;
+}
+
+// Порядок применения певдоэлементов (можно и для btn): a:link, a:visited, a:hover, a:focus, a:active
+
+a {
+  text-decoration: none;
+  // color: $brand-color;
+  &:visited {}
+  &:hover {}
+  &:focus {}
+  &:active{}
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent; // none
+  // border: none; убирает рамку
+  // border: 1px solid transparent; убирает рамку
+  // min-width: 35px; лучше задавать
+  // padding: 0.5em 1em; лучше задавать
+  // color: inherit;
+}
+
+// Стилевое оформление всех полей ввода текста, кроме флажков и переключателей
+// input:not([type=checkbox]):not([type=radio]) {  display: block; width: 100%;}
+// В блочные => они выводятся каждый на своей строке (если нужно). Ширина нужна, т.к. у input она определяется атрибутом size. Если нужна определённая, то указывается в CSS при помощи width.
+
+// Цвет текста для подсказки input::placeholder {color:___;}
+
+/* Base end */
+
+
+// helpers.scss
+
+// для удобства счёта и перевода 23px = 2.3rem
+// html {font-size: 10px;}
+// body {font-size: 1.6rem;}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  // для прижатия footer к низу страницы
+  // display: flex;
+  // flex-direction: column;
+  // .page { flex: 1 1 auto;}
+}
+
+._container {
+  max-width: $content-width;
+  margin: 0 auto;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // зачем - ?
+  // width: 100%;
+}
+
+// скрытие h1
+
+.visuallyhidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 9999.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+  }
+
+// делает из картинки как img фактически фоновое изображение (для backend)
+// фрилансер по жизни
+// для элемента с классом ._ibg ставим padding-bottom h/w*100% (например, 21/35*100%=60%)
+
+._ibg {
+  position: relative;
+  
+  // в одном из примеров есть ещё плюс:
+  
+  // padding-bottom: 56.25%; /* 16:9 */
+  // height: 0;
+  // overflow: hidden;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+// можно задавать базовые стили для некоторых элементов (h2, p)
