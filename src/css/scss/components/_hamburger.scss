@@ -48,7 +48,8 @@
 //     height: 2px;
 // }
 
-.icon-menu {
+.icon-menu,
+.close-icon-menu {
     display: none;
     @include mobile {
         display: flex;
@@ -76,4 +77,49 @@
             height: 2px;
         }
     }
+}
+.close-icon-menu {
+    display: none;
+    @include mobile {
+        position: relative;
+        height: 30px;
+        flex: 0 0 30px;
+        justify-content: center;
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: rotate(45deg);
+            // transform: translate(0px, 2px) rotate(45deg);
+        }
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: rotate(-45deg);
+            // transform: translate(0px, 0px) rotate(-45deg);
+        }
+    }
+}
+
+.header:target .menu__body {
+    left: 0;
+}
+// прокладка, чтобы при скроле всё скрывалось под header
+.header:target .menu__body:before {
+   content: '';
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 80px;
+   width: 100%;
+   background-color: #fff;
+}
+.header:target .icon-menu {
+    display: none;
+}
+.header:target .close-icon-menu {
+    display: flex;
 }

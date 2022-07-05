@@ -390,13 +390,16 @@ body {
 
 @media (max-width: 767.98px) {
   .menu__body {
+    overflow: auto;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     background-color: #ffffff;
     padding: 90px 15px 30px;
+    -webkit-transition: left 1s ease 0s;
+    transition: left 1s ease 0s;
   }
 }
 
@@ -488,6 +491,10 @@ body {
   }
 }
 
+.get-srarted {
+  background-color: #fafbfd;
+}
+
 .button {
   font-family: "Raleway", sans-serif;
   color: #fcfdfe;
@@ -551,12 +558,14 @@ body {
   top: calc( 50% - 1.5px);
 }
 
-.icon-menu {
+.icon-menu,
+.close-icon-menu {
   display: none;
 }
 
 @media (max-width: 767.98px) {
-  .icon-menu {
+  .icon-menu,
+  .close-icon-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -574,19 +583,79 @@ body {
             justify-content: space-between;
     margin-left: 20px;
   }
-  .icon-menu > span {
+  .icon-menu > span,
+  .close-icon-menu > span {
     height: 2px;
     background-color: #000000;
   }
-  .icon-menu:before {
+  .icon-menu:before,
+  .close-icon-menu:before {
     content: '';
     background-color: #000000;
     height: 2px;
   }
-  .icon-menu:after {
+  .icon-menu:after,
+  .close-icon-menu:after {
     content: '';
     background-color: #000000;
     height: 2px;
   }
+}
+
+.close-icon-menu {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .close-icon-menu {
+    position: relative;
+    height: 30px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30px;
+            flex: 0 0 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .close-icon-menu:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .close-icon-menu:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+.header:target .menu__body {
+  left: 0;
+}
+
+.header:target .menu__body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header:target .icon-menu {
+  display: none;
+}
+
+.header:target .close-icon-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

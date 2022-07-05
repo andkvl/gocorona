@@ -9,7 +9,7 @@ ending:
   !!! Нужно убрать в этом изображении max-width: 100%;
  около 1:32:00 - меню (для маленьких разрешений)
  около 1:38:00 - :target
-
+    :target смотри в _hamburger.scss
 
 
 !!! В andkvl привести в порядок base and constants

@@ -39,8 +39,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__container _container">
+      <header id="open" class="header">
+        <div id="close" class="header__container _container">
           <a href="#" class="header__logo">
             <img src="src/images/logo.svg" alt="logo" />
           </a>
@@ -48,16 +48,16 @@
             <nav id="menu" class="menu__body">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">HOME</a>
+                  <a href="" class="menu__link">HOME</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">FEATURES</a>
+                  <a href="" class="menu__link">FEATURES</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">SUPPORT</a>
+                  <a href="" class="menu__link">SUPPORT</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">CONTACT US</a>
+                  <a href="" class="menu__link">CONTACT US</a>
                 </li>
               </ul>
             </nav>
@@ -65,11 +65,38 @@
           <div class="header__button">
             <!-- <a href="#" class="button button_blue">DOWNLOAD</a> -->
             <button class="button button_blue">DOWNLOAD</button>
-            <a href="#menu" class="icon-menu"><span></span></a>
+            <a href="#open" class="icon-menu"><span></span></a>
+            <a href="#close" class="close-icon-menu">
+              <!-- <span></span> -->
+            </a>
           </div>
         </div>
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="get-srarted">
+          <div class="get-srarted__container _container">
+            <div class="get-srarted__content">
+              <div class="get-srarted__block-text block-text">
+                <h2 class="block-text__title block-text__title_blue">Take care of yours family’s <span>health.</span></h2>
+                <div class="block-text__text">All in one destination for COVID-19 health queries.  Consult 10,000+ health workers about your concerns.</div>
+                <a href="" class="block-text__button button">GET STARTED</a>
+              </div>
+            </div>
+            <div class="get-srarted__image">
+              <img src="src/images/get-srarted/bg.svg" alt="bg">
+            </div>
+            <a href="" class="get-srarted__video video-get-srarted">
+              <div class="video-get-srarted__icon">
+                <img src="src/images/get-srarted/play.svg" alt="play">
+              </div>
+              <div class="video-get-srarted__body">
+                <div class="video-get-srarted__title">Stay safe with GoCorona</div>
+                <div class="video-get-srarted__text">Watch Video</div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
       <footer class="footer">
         <div class="footer__container _container"></div>
       </footer>
