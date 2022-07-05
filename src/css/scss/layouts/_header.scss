@@ -34,6 +34,8 @@
     justify-content: flex-end;
 }
 .menu__body {
+    // transition: all 10000ms;
+    // left: -100%;
     @include mobile {
         // display: none;
         position: fixed;

@@ -4,20 +4,15 @@
 beginning: 04.07.2022
 ending:
 
-    <div class="header__menu menu">
-      <button class="menu__icon icon-menu"><span></span></button>
-      <nav class="menu_body">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="" class="menu__link"></a></li>
-        </ul>
-      </nav>
-    </div>
-
- Фрилансер по жизни: около 1:24:00 - гамбургер
- Фрилансер по жизни: около 1:31:00 - скрыть текст в картике на лого
+ около 1:24:00 - гамбургер
+ около 1:31:00 - скрыть текст в картике на лого
   !!! Нужно убрать в этом изображении max-width: 100%;
+ около 1:32:00 - меню (для маленьких разрешений)
+ около 1:38:00 - :target
+
 
 
 !!! В andkvl привести в порядок base and constants
 
-http://prgssr.ru/development/tryuki-s-psevdoklassom-target.html
+Трюки с псевдоклассом :target
+  http://prgssr.ru/development/tryuki-s-psevdoklassom-target.html
