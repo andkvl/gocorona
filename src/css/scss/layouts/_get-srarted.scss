@@ -1,34 +1,49 @@
 .get-srarted {
     background-color: $color-bg;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 .get-srarted__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .get-srarted__content {
+    flex: 0 1 48%;
+    padding-left: 20px;
 }
 .get-srarted__block-text {
+    max-width: 410px;
 }
-.block-text {
-}
-.block-text__title {
-}
-.block-text__title_blue {
-}
-.block-text__text {
-}
-.block-text__button {
-}
-
 .get-srarted__video {
-}
-.video-get-srarted {
-}
-.video-get-srarted__icon {
-}
-.video-get-srarted__body {
-}
-.video-get-srarted__title {
-}
-.video-get-srarted__text {
+    flex: 1 1 100%;
+    padding-top: 60px;
+    padding-left: 20px;
 }
 .get-srarted__image {
+    flex: 0 1 52%;
+}
+.video-get-srarted {
+    display: inline-flex;
+    align-items: center;
+}
+.video-get-srarted__icon {
+    flex: 0 0 44px;
+}
+.video-get-srarted__body {
+    padding-left: 12px;
+}
+.video-get-srarted__title {
+    color: #b0b0b0;
+    @include font (1.3, 1.26);
+    letter-spacing: 1.5px;
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+.video-get-srarted__text {
+    @include font (0.9, 1.26);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-title;
 }

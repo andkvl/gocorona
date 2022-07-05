@@ -1,0 +1,25 @@
+.block-text {
+}
+.block-text__title {
+    @include font (4.4, 1.26, 700);
+    color: $color-title;
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    > span {
+        color: $color-primary;
+    }
+    &_blue {
+        > span {
+            color: $color-additional;
+        }
+    }
+}
+.block-text__text {
+    line-height: 138.5%;
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+.block-text__button {
+}
