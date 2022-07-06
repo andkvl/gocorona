@@ -16,3 +16,6 @@ ending:
 
 Трюки с псевдоклассом :target
   http://prgssr.ru/development/tryuki-s-psevdoklassom-target.html
+
+Адаптивное (отзывчивое) CSS свойство. Как быстро адаптировать элементы.
+  https://youtu.be/eaOAY0vIB4U
