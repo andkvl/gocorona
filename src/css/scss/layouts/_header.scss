@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
 }
 .header__container {
     min-height: 114px;
@@ -16,7 +16,7 @@
 .header__logo {
     @include mobile {
         position: relative;
-        z-index: 2;
+        z-index: 5;
     }
     @include mobile-small {
         > img {
@@ -47,9 +47,6 @@
         padding: 90px 15px 30px;
         // @extend %transition;
         transition: left 1s ease 0s;
-        &:target {
-            // left: 0;
-        }
     }
 }
 .menu__list {
@@ -94,7 +91,7 @@
     }
     @include mobile {
         position: relative;
-        z-index: 2;
+        z-index: 5;
     }
     > .button {
         @include mobile {

@@ -19,3 +19,7 @@ ending:
 
 Адаптивное (отзывчивое) CSS свойство. Как быстро адаптировать элементы.
   https://youtu.be/eaOAY0vIB4U
+
+Для img указывает vertical-align: top;
+        text-align: center;
+В base display: block; => text-align: center; не ставит по-центру => inline-block

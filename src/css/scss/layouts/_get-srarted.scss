@@ -1,27 +1,70 @@
 .get-srarted {
     background-color: $color-bg;
-    padding-top: 150px;
-    padding-bottom: 50px;
 }
 .get-srarted__container {
+    padding-top: 150px;
+    padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        top: 0;
+        right: 267px;
+        background-color: $color-primary;
+        border-radius: 30px 0px 0px 30px;
+        transform: translate(100%, 0);
+        @include tablet {
+            right: 185px;
+            border-radius: 20px 0px 0px 20px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    @include mobile {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
 }
 .get-srarted__content {
     flex: 0 1 48%;
-    padding-left: 20px;
+    padding: 0px 20px;
+    @include mobile {
+        flex: 1 1 100%;
+        padding: 0;
+    }
 }
 .get-srarted__block-text {
     max-width: 410px;
+    @include mobile {
+        max-width: none;
+    }
 }
 .get-srarted__video {
     flex: 1 1 100%;
     padding-top: 60px;
     padding-left: 20px;
+    @include mobile {
+        padding: 0;
+    }
 }
 .get-srarted__image {
     flex: 0 1 52%;
+    position: relative;
+    z-index: 2;
+    @include mobile {
+        > img {
+            display: inline-block;
+        }
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 30px 0px;
+    }
 }
 .video-get-srarted {
     display: inline-flex;
