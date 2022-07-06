@@ -765,6 +765,11 @@ body {
   bottom: 187px;
 }
 
+.experts {
+  background-color: #fafbfd;
+  padding: 53px 0px 116px 0px;
+}
+
 .button {
   display: inline-block;
   font-family: "Raleway", sans-serif;
