@@ -23,3 +23,23 @@ ending:
 Для img указывает vertical-align: top;
         text-align: center;
 В base display: block; => text-align: center; не ставит по-центру => inline-block
+
+!!! Соотношение высоты к ширине (padding-bottom = h / w * 100%);
+  При применении этого способа (здесь это flex-элемент в flex-контейнере) padding будет расчитываться от width Главной оси всего родителя (flex-контейнера в данном случае (.experts__body); например, width = 1057px => pb = 1057*58% = 613px).
+
+.experts__body {
+  display: flex;
+}
+.experts__video {
+  flex: 0 1 50%;
+  position: relative;
+  padding-bottom: 58%;
+  > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+}
