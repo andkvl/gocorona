@@ -1,4 +1,7 @@
 .block-text {
+    &_center {
+        text-align: center;
+    }
 }
 .block-text__title {
     @include font (4.4, 1.26, 700);
@@ -19,6 +22,10 @@
     }
 }
 .block-text__text {
+    &_maxwidth {
+        max-width: 620px;
+        margin: 0 auto;
+    }
     line-height: 138.5%;
     &:not(:last-child) {
         margin-bottom: 24px;
